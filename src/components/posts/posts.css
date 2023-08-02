@@ -1,0 +1,7 @@
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    background-color: black;
+    padding-top: 10px;
+}

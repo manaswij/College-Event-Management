@@ -1,0 +1,116 @@
+.top {
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topLeft {
+  color: #f6c729;
+  font-size: 30px;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.link {
+  padding-right: 10px;
+}
+
+.topIcon {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  color: white;
+}
+
+.mobile-menu-icon {
+  border: none;
+  background: none;
+  font-size: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .topLeft {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+
+  .topListItem,
+  .topImg {
+    display: none;
+  }
+
+  .topListItem-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: white;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .link {
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #000;
+    background-color: white;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+}

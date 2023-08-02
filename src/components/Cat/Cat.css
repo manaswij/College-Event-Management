@@ -1,0 +1,19 @@
+.cat, .container {
+  display: flex;
+  background-color: black;
+}
+
+.card {
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.container {
+  /* Add any additional styles specific to .container here */
+}
+
+.header {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
